@@ -68,6 +68,7 @@ class: center, invert, twostates
 - Supply 
 - ![](MovieForSupplyTeam_state.svg)
 
+
 - Marketing 
 - ![](MovieForMarketingTeam_state.svg)
 
