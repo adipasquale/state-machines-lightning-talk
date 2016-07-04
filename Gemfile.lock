@@ -1,0 +1,20 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rake (10.4.2)
+    ruby-graphviz (1.2.2)
+    state_machine (1.2.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  rake
+  ruby-graphviz
+  state_machine
+
+RUBY VERSION
+   ruby 2.3.0p0
+
+BUNDLED WITH
+   1.12.5
