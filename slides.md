@@ -12,7 +12,9 @@ class: middle, center, title-slide
 
 class: middle, center, invert, bigsm
 
-![](SM_state.svg)
+### Movie
+
+![](Movie_state.svg)
 
 ---
 
@@ -46,7 +48,7 @@ name: intro
 
 ## intro
 
-- startup-oriented
+- startup context
 
 ???
 
@@ -86,16 +88,11 @@ class: middle, center
 
 ---
 
-name: tip1
+class: center
 
-## 1. decide on your own
+.header[how to fail : tip n°1]
 
-
----
-
-template: tip1
-
-- different and valid views of the data
+## decide everything on your own
 
 ???
 
@@ -110,7 +107,7 @@ template: tip1
 
 class: center, invert, twostates
 
-### Netflix movie 
+### Netflix Movie
 
 - Supply 
 - .supply[![](MovieForSupplyTeam_state.svg)]
@@ -122,16 +119,12 @@ class: center, invert, twostates
 
 ---
 
-name: tip2
+class: center
 
-## 2. look for _real_ states
+.header[how to fail : tip n°2]
 
----
+## look for universal truth
 
-template: tip2
-
-- hard enough to find objects
-- be grateful for each obvious decision
 
 ???
 
@@ -142,20 +135,12 @@ template: tip2
 
 ---
 
-name: tip3
+class: center
 
-## 3. anticipate everything
+.header[how to fail : tip n°3]
 
-???
+## anticipate the future
 
-- product may go in ≠ directions
-
----
-
-template: tip3
-
-- over-engineering ™
-- strict necessary right now
 
 ???
 
@@ -164,16 +149,11 @@ template: tip3
 
 
 ---
-name: tip4
+class: center
 
-## 4. store only the state
+.header[how to fail : tip n°4]
 
----
-
-template: tip4
-
-- tracking, debugging, migrations
-- store all transitions
+## store nothing but the state
 
 ???
 
