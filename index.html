@@ -39,7 +39,14 @@
       .invert img{
         -webkit-filter: invert(1);
       }
-      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .bigsm img{
+        width: 420px;
+      }
+      .remark-code,
+      .remark-inline-code {
+        /*font-family: 'Ubuntu Mono'; */
+        font-size: 21px;
+      }
       .twostates img{
         /*display: block;*/
       }
@@ -67,7 +74,8 @@
     </script>
     <script>
     var slideshow = remark.create({
-      sourceUrl: 'slides.md'
+      sourceUrl: 'slides.md',
+      highlightStyle: "monokai"
     });
     </script>
   </body>

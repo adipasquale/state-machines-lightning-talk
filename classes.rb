@@ -34,3 +34,11 @@ class MovieForSupplyTeam
     end
   end
 end
+
+class SM
+  state_machine :state, :initial => :designing do
+    event :listen_to_lightning_talk do
+      transition :designing => :failed
+    end
+  end
+end

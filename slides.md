@@ -10,6 +10,38 @@ class: middle, center, title-slide
 
 ---
 
+class: middle, center, invert, bigsm
+
+![](SM_state.svg)
+
+---
+
+```bash
+# Gemfile
+
+gem 'state_machine'
+# or gem 'state_machines-activerecord'
+```
+
+
+```rb
+class StateMachineDesign
+  state_machine :state, :initial => :designing do
+
+    event :listen_to_lightning_talk do
+      transition :designing => :failed
+    end
+
+  end
+end
+```
+
+```bash
+$ rake state_machine:draw ...
+```
+
+---
+
 ## intro
 
 - startup-oriented
@@ -92,23 +124,26 @@ class: center, invert, twostates
 ## 3. anticipate everything
 
 - over-engineering ™
-- try and keep the strict necessary presently
+- strict necessary right now
 
 ???
 
-- usually, the least states, the easier it will later be to migrate the data.
+- product may go in ≠ directions
 - you can orient it a little bit in the direction you want it to take for later
+- usually, the least states, the easier it will later be to migrate the data.
+
 
 ---
 
 ## 4. store only the state
 
-- awful for tracking, debugging, migrations
-- you should store all transitions, event the last event.
+- tracking, debugging, migrations
+- store all transitions
 
 ???
 
-- store all transitions, event the last event.
+-
+- store all transitions, up to the last one.
 - will help migrating, and investigating what happened.
 
 
