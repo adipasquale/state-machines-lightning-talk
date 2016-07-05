@@ -27,11 +27,11 @@ gem 'state_machine'
 
 
 ```rb
-class StateMachineDesign
-  state_machine :state, :initial => :designing do
+class Movie
+  state_machine :state, :initial => :in_production do
 
-    event :listen_to_lightning_talk do
-      transition :designing => :failed
+    event :finish_shooting do
+      transition :in_production => :in_theaters
     end
 
   end
