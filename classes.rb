@@ -4,11 +4,6 @@ class MovieForMarketingTeam
       transition :pending => :in_catalog
     end
 
-    event :cancel do
-      transition :pending => :canceled
-      transition :in_catalog => :canceled
-    end
-
     event :promote do
       transition :in_catalog => :on_homepage
     end
@@ -28,14 +23,10 @@ class MovieForSupplyTeam
     event :renegotiated do
       transition :online => :online
     end
-
-    event :dispose do
-      transition :online => :disposed
-    end
   end
 end
 
-class SM
+class StateMachineDesign
   state_machine :state, :initial => :designing do
     event :listen_to_lightning_talk do
       transition :designing => :failed

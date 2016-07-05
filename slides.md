@@ -42,16 +42,26 @@ $ rake state_machine:draw ...
 
 ---
 
+name: intro
+
 ## intro
 
 - startup-oriented
-- very structuring
-
 
 ???
 
 - I will not speak of SM theory & research nor about integrated circuits.
 - in a startup, SMs give structure to the code and to the whole team dynamic.
+
+---
+
+name: intro2
+template: intro
+
+- very structuring
+
+???
+
 - goals are :
   - simple so it's easy to grasp for everyone, not only tech. it helps a lot when languages align.
   - rational for developers to work with
@@ -59,10 +69,8 @@ $ rake state_machine:draw ...
 
 ---
 
-## intro
+template: intro2
 
-- startup-oriented
-- very structuring
 - ∞ valid choices
 
 ???
@@ -78,7 +86,14 @@ class: middle, center
 
 ---
 
+name: tip1
+
 ## 1. decide on your own
+
+
+---
+
+template: tip1
 
 - different and valid views of the data
 
@@ -98,7 +113,7 @@ class: center, invert, twostates
 ### Netflix movie 
 
 - Supply 
-- ![](MovieForSupplyTeam_state.svg)
+- .supply[![](MovieForSupplyTeam_state.svg)]
 
 
 - Marketing 
@@ -107,10 +122,16 @@ class: center, invert, twostates
 
 ---
 
+name: tip2
+
 ## 2. look for _real_ states
 
-- be grateful for each obvious decision
+---
+
+template: tip2
+
 - hard enough to find objects
+- be grateful for each obvious decision
 
 ???
 
@@ -121,21 +142,35 @@ class: center, invert, twostates
 
 ---
 
+name: tip3
+
 ## 3. anticipate everything
+
+???
+
+- product may go in ≠ directions
+
+---
+
+template: tip3
 
 - over-engineering ™
 - strict necessary right now
 
 ???
 
-- product may go in ≠ directions
 - you can orient it a little bit in the direction you want it to take for later
 - usually, the least states, the easier it will later be to migrate the data.
 
 
 ---
+name: tip4
 
 ## 4. store only the state
+
+---
+
+template: tip4
 
 - tracking, debugging, migrations
 - store all transitions
@@ -146,4 +181,8 @@ class: center, invert, twostates
 - store all transitions, up to the last one.
 - will help migrating, and investigating what happened.
 
+---
 
+class: middle, center, full
+
+![](groucho.jpg)
